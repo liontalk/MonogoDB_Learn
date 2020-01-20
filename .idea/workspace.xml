@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d880fa07-604d-419a-a904-4e03820b4289" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mongodb_demo/src/main/java/cn/liontalk/mongodb/config/Swagger2Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongodb_demo/src/main/java/cn/liontalk/mongodb/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongodb_demo/src/main/java/cn/liontalk/mongodb/dao/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongodb_demo/src/main/java/cn/liontalk/mongodb/entity/OrderEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongodb_demo/src/main/java/cn/liontalk/mongodb/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongodb_demo/src/main/java/cn/liontalk/mongodb/service/impl/OrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodb_demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb_demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodb_demo/src/main/java/cn/liontalk/mongodb/MongodbDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb_demo/src/main/java/cn/liontalk/mongodb/MongodbDemoApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongodb_demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb_demo/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodb_demo/src/test/java/cn/liontalk/mongodb_demo/MongodbDemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb_demo/src/test/java/cn/liontalk/mongodb_demo/MongodbDemoApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -136,8 +127,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mongodb_demo/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            <state relative-caret-position="243">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -352,7 +343,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/mongodb_demo/HELP.md" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579492006638" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579500897487" />
     <property name="last_opened_file_path" value="D:/WorkSpace/taishengjiankang_version2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -399,7 +390,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579485178588</updated>
-      <workItem from="1579485180148" duration="5615000" />
+      <workItem from="1579485180148" duration="8031000" />
     </task>
     <task id="LOCAL-00001" summary="数据提交策略">
       <created>1579485702613</created>
@@ -415,14 +406,22 @@
       <option name="project" value="LOCAL" />
       <updated>1579485915951</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="提交修改mongodb的目录">
+      <created>1579492020798</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579492020798</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5615000" />
+    <option name="totallyTimeSpent" value="8031000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="JRebel" side_tool="true" />
       <window_info id="Image Layers" />
@@ -596,8 +595,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mongodb_demo/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        <state relative-caret-position="243">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
