@@ -1,4 +1,4 @@
-package cn.liontalk.mongodb_demo;
+package cn.liontalk.mongodb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
