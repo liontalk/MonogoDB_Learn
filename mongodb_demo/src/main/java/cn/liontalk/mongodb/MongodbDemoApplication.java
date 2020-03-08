@@ -25,7 +25,7 @@ public class MongodbDemoApplication {
                 "External: \thttp://" + ip + ":" + port + path + "/\n\t" +
                 "swagger-ui: \thttp://" + ip + ":" + port + path + "/swagger-ui.html\n\t" +
                 "Doc: \t\thttp://" + ip + ":" + port + path + "/doc.html\n" +
-                "----------------------------------------------------------");
+                "-show---------------------------------------------------------");
     }
 
 }

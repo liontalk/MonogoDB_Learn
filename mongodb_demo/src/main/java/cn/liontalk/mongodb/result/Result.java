@@ -1,7 +1,6 @@
 package cn.liontalk.mongodb.result;
 
 import lombok.Data;
-import org.omg.CORBA.DATA_CONVERSION;
 
 @Data
 public class Result<T> {

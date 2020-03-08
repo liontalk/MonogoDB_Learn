@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;
+import java.util.Date;
 
 @RestController
 @RequestMapping(value = "/mongo")
@@ -22,26 +23,30 @@ public class OrderController {
     private OrderService orderEntityService;
 
 
-    @ApiOperation(value = "保存用户信息",notes = "保存用户信息")
+    @ApiOperation(value = "保存用户信息", notes = "保存用户信息")
     @PostMapping("/saveOrderEntity")
     public String saveOrderEntity() {
-        OrderEntity orderEntity = new OrderEntity();
-        orderEntity.setId(2);
-        orderEntity.setNickName("潘玮柏");
-        orderEntity.setOrderNo("X797468");
-        orderEntity.setTotalPrice(new BigDecimal(4500.00));
-        orderEntityService.saveOrder(orderEntity);
+        for (int i = 0; i < 100; i++) {
+            OrderEntity orderEntity = new OrderEntity();
+            orderEntity.setId(1000+i);
+            orderEntity.setNickName("潘玮柏" + "_" + ((int)Math.random()*1000));
+            orderEntity.setOrderNo("X797468" + "_" + i);
+            orderEntity.setCreateTime(new Date());
+            orderEntity.setTotalPrice(new BigDecimal(4500.00));
+            orderEntityService.saveOrder(orderEntity);
+        }
+
         return "OK";
     }
 
-    @ApiOperation(value = "通过订单ID获取用户信息",notes = "通过订单ID获取用户信息")
+    @ApiOperation(value = "通过订单ID获取用户信息", notes = "通过订单ID获取用户信息")
     @GetMapping("/getOrderByOrderNo")
     public OrderEntity getOrderByOrderNo() {
         OrderEntity orderEntity = orderEntityService.getByOrderNo("X797466");
         return orderEntity;
     }
 
-    @ApiOperation(value = "模糊查询保存用户信息",notes = "模糊查询保存用户信息")
+    @ApiOperation(value = "模糊查询保存用户信息", notes = "模糊查询保存用户信息")
     @GetMapping("/getOrderByOrderNoLike")
     public OrderEntity getOrderByOrderNoLike() {
         //String cond="X797";
@@ -50,14 +55,14 @@ public class OrderController {
         return orderEntity;
     }
 
-    @ApiOperation(value = "删除用户信息",notes = "删除用户信息")
+    @ApiOperation(value = "删除用户信息", notes = "删除用户信息")
     @PostMapping("/removeOrderByOrderNo")
     public String removeOrderByOrderNo() {
         orderEntityService.removeOrderByOrderNo("X797468");
         return "OK";
     }
 
-    @ApiOperation(value = "更新用户信息",notes = "更新用户信息")
+    @ApiOperation(value = "更新用户信息", notes = "更新用户信息")
     @PostMapping("/updateOrderEntity")
     public String updateOrderEntity() {
         OrderEntity orderEntity = new OrderEntity();
