@@ -22,6 +22,14 @@ public class LogTest {
         logger.warn("这是warn");
         logger.warn("这是warn");
         logger.trace("这是trace");
+        Integer a = 3;
+        System.out.println(a);
+        String a1  = new String("zhouzhe");
+        String a2  = new String("zhouzhe");
+        System.out.println(a1==a2);
+        String a3 = a1.intern();
+        String a4 = a1.intern();
+        System.out.println(a3==a4);
     }
 
 }

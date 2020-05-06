@@ -42,7 +42,7 @@ public class OrderController {
     @ApiOperation(value = "通过订单ID获取用户信息", notes = "通过订单ID获取用户信息")
     @GetMapping("/getOrderByOrderNo")
     public OrderEntity getOrderByOrderNo() {
-        OrderEntity orderEntity = orderEntityService.getByOrderNo("X797466");
+        OrderEntity orderEntity = orderEntityService.getByOrderNo("X797468");
         return orderEntity;
     }
 

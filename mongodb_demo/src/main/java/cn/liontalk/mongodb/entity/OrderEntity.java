@@ -12,7 +12,7 @@ import java.util.Date;
 
 @Data
 @ToString
-@Document(collection="orderInfo")
+@Document(collection = "orderInfo")
 public class OrderEntity {
 
 
@@ -32,13 +32,17 @@ public class OrderEntity {
     private int buyCount;
 
 
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date createTime;
 
 
-
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date updateTime;
+
+    public boolean equals(Object o) {
+        OrderEntity obj = (OrderEntity) o;
+        return this.orderNo.equals(obj.orderNo) && this.nickName.equals(obj.nickName);
+    }
 }
